@@ -35,3 +35,27 @@ Pr.@printf("diff=%.17f\n", diff)
 
 @show Fsum
 @show Fdiff
+
+println()
+println("2重指数型積分")
+#2重指数型積分
+function de_integrate(f; h=0.1, N=10)
+    s = 0.0
+    for k in -N:N
+        t = k * h
+        x = tanh((π / 2) * sinh(t))
+        w = (π / 2) * cosh(t) * sech((π / 2) * sinh(t))^2 * h
+        s += f(x) * w
+    end
+    return s
+end
+
+# 例：sqrt(1 - x^2) の積分（π/2 になるはず）
+f(x) = sqrt(1 - x^2)
+dsum = de_integrate(f, N=100)
+ddiff = dsum - π / 2
+
+@show dsum
+@show ddiff
+
+println()
