@@ -2,7 +2,7 @@ import FastGaussQuadrature as FGQ
 import LinearAlgebra as LA
 
 # 積分したい関数
-f(x) = x^2
+f(x) = sqrt(1 - x^2)
 
 # n点Gauss-Legendreで重みと点を取得
 n = 10
