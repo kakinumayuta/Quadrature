@@ -1,0 +1,12 @@
+name = "day4"
+uuid = "753f02d9-4b1b-4a22-bc3d-a5bb46f4c9d6"
+authors = ["kakinumayuta <kakinuma.y.068@ms.saitama-u.ac.jp>"]
+version = "0.1.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+
+[compat]
+LinearAlgebra = "1.11.0"
+Revise = "3.7.6"
