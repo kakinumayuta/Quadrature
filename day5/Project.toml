@@ -1,0 +1,7 @@
+name = "day5"
+uuid = "6cfe7058-0e79-4d56-a6cf-3b50b81841b0"
+authors = ["kakinumayuta <kakinuma.y.068@ms.saitama-u.ac.jp>"]
+version = "0.1.0"
+
+[deps]
+day4 = "753f02d9-4b1b-4a22-bc3d-a5bb46f4c9d6"
